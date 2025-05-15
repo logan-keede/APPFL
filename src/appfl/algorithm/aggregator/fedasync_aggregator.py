@@ -138,6 +138,7 @@ class FedAsyncAggregator(BaseAggregator):
                 or self.global_state[name].dtype == torch.int32
             ):
                 continue
+            # print(name)
             self.step[name] = (
                 alpha_t * (-local_model[name])
                 if gradient_based

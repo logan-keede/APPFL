@@ -11,6 +11,9 @@ class CNN(nn.Module):
         )
         self.conv2 = nn.Conv2d(32, 64, kernel_size=5, padding=0, stride=1, bias=True)
         self.maxpool = nn.MaxPool2d(kernel_size=(2, 2))
+        self.conv3 = nn.Conv2d(32, 64, kernel_size=5, padding=0, stride=1, bias=True)
+        self.conv4 = nn.Conv2d(32, 64, kernel_size=5, padding=0, stride=1, bias=True)
+        
         self.act = nn.ReLU(inplace=True)
 
         ###

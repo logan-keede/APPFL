@@ -1,4 +1,4 @@
-client_id: "Client2"
+client_id: "Client3"
 
 train_configs:
   # Device
@@ -13,7 +13,7 @@ data_configs:
   dataset_name: "get_mnist"
   dataset_kwargs:
     num_clients: 3
-    client_id: 1
+    client_id: 2
     partition_strategy: "class_noniid"
     visualization: True
     output_dirname: "./output"

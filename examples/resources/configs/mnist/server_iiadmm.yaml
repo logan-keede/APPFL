@@ -61,6 +61,8 @@ server_configs:
   scheduler_kwargs:
     same_init_model: True
   aggregator: "IIADMMAggregator"
+  aggregator_kwargs:
+    client_weights_mode: "equal"
   device: "cpu"
   num_global_epochs: 10
   logging_output_dirname: "./output"
