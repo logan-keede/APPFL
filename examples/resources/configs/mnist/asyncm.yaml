@@ -56,10 +56,10 @@ server_configs:
   aggregator_kwargs:
     client_weights_mode: "equal"
     staleness_fn: "constant"
-    server_momentum_param_1: 0.9
+    server_momentum_param_1: 0.8
     staleness_fn_kwargs:
       a: 0.5
-    alpha: 0.15
+    alpha: 0.2
   device: "cpu"
   num_global_epochs: 50
   logging_output_dirname: "./output"

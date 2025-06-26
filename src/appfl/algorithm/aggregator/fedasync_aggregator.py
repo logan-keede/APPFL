@@ -38,6 +38,7 @@ class FedAsyncAggregator(BaseAggregator):
             **self.aggregator_configs.get("staleness_fn_kwargs", {}),
         )
         self.alpha = self.aggregator_configs.get("alpha", 0.9)
+        print(self.alpha)
         self.global_step = 0
         self.client_step = {}
         self.step = {}
