@@ -3,7 +3,7 @@ from appfl.agent import ClientAgent
 from appfl.comm.grpc import GRPCClientCommunicator
 
 client_agent_config = OmegaConf.load('./resources/configs/mnist/client_3.yaml')
-client_agent_config.comm_configs.grpc_configs["server_uri"] = "0.0.0.0:50051"
+#client_agent_config.comm_configs.grpc_configs["server_uri"] = "0.0.0.0:50051"
 print(client_agent_config.comm_configs.grpc_configs)
 client_agent = ClientAgent(client_agent_config=client_agent_config)
 client_communicator = GRPCClientCommunicator(
