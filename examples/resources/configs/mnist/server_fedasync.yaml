@@ -48,7 +48,7 @@ client_configs:
       param_cutoff: 1024
 
 server_configs:
-  num_clients: 3
+  num_clients: 4
   scheduler: "AsyncScheduler"
   scheduler_kwargs:
     same_init_model: True
@@ -60,7 +60,7 @@ server_configs:
       a: 0.5
     alpha: 0.9
   device: "cpu"
-  num_global_epochs: 50
+  num_global_epochs: 1000
   logging_output_dirname: "./output"
   logging_output_filename: "result"
   comm_configs:

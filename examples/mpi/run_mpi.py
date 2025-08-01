@@ -25,6 +25,8 @@ if rank == 0:
     # Load and set the server configurations
     server_agent_config = OmegaConf.load(args.server_config)
     server_agent_config.server_configs.num_clients = num_clients
+    if server_agent_config.server_configs.scheduler == 'AsyncScheduler':
+        server_agent_config.server_configs.num_global_rounds = num_clients*15
     # Create the server agent and communicator
     server_agent = ServerAgent(server_agent_config=server_agent_config)
     server_communicator = MPIServerCommunicator(
