@@ -58,7 +58,7 @@ server_configs:
   scheduler_kwargs:
     same_init_model: True
   aggregator: "ICEADMMAggregator"
-  device: "cpu"
+  device: "cuda"
   num_global_epochs: 10
   logging_output_dirname: "./output"
   logging_output_filename: "result"

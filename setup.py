@@ -54,7 +54,7 @@ setuptools.setup(
     python_requires=">=3.8",
     install_requires=[
         numpy_version,
-        "torch",
+        # "torch",
         "grpcio",
         "grpcio-tools",
         "omegaconf",
@@ -102,7 +102,7 @@ setuptools.setup(
             "tqdm",
             "jupyter",
             "wget",
-            "torchvision",
+            # "torchvision",
             "tensorboard",
         ],
         "monai": ["monai[all]==1.2.0"],

@@ -50,7 +50,7 @@ server_configs:
   aggregator_kwargs:
     client_weights_mode: "equal"
     server_momentum_param_1: 0.9
-  device: "cpu"
+  device: "cuda"
   num_global_epochs: 10
   logging_output_dirname: "./output"
   logging_output_filename: "result"

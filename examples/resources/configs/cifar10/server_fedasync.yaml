@@ -55,7 +55,7 @@ server_configs:
     staleness_fn_kwargs:
       a: 0.5
     alpha: 0.9
-  device: "cpu"
+  device: "cuda"
   num_global_epochs: 20
   logging_output_dirname: "./output"
   logging_output_filename: "result"

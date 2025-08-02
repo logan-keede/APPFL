@@ -49,7 +49,7 @@ server_configs:
   aggregator: "FedAvgAggregator"
   aggregator_kwargs:
     client_weights_mode: "equal"
-  device: "cpu"
+  device: "cuda"
   num_global_epochs: 1000
   logging_output_dirname: "./output"
   logging_output_filename: "result"
