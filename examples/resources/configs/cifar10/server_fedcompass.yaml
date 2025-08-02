@@ -30,8 +30,8 @@ client_configs:
     val_data_shuffle: False
 
   model_configs:
-    model_path: "./resources/model/resnet.py"
-    model_name: "ResNet18"
+    model_path: "./resources/model/custom.py"
+    model_name: "CustomCNN"
 
   comm_configs:
     compressor_configs:

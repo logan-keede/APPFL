@@ -40,7 +40,7 @@ client_configs:
 
   model_configs:
     model_path: "./model/resnet.py"
-    model_name: "ResNet18"
+    model_name: "CustomCNN"
 
   comm_configs:
     compressor_configs:
